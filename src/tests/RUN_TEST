@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CONFIG=`ls -1 $PWD/$@`
+
+CONFIG=`echo $CONFIG | sed 's/\.csc//'`
+
+cd $COOJA_TEST_DIR
+
+bash RUN_TEST $CONFIG 
+

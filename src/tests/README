@@ -1,0 +1,3 @@
+Note on cooja tests
+===================
+1. the firmware file name for micaz node must be ended with .elf
