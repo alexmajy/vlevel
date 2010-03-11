@@ -1,4 +1,3 @@
-
 ifeq ($(TARGET),)
   -include Makefile.target
   ifeq ($(TARGET),)
@@ -8,4 +7,10 @@ ifeq ($(TARGET),)
     ${info using saved target '$(TARGET)'}
   endif
 endif
+
+define assert
+  $(if $1,,$(error Assertion failed: $2))
+endef
+
+
 
